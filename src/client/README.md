@@ -1,0 +1,1 @@
+Attaches the App to the DOM

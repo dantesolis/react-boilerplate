@@ -2,9 +2,12 @@
   "name": "react-project-setup",
   "version": "1.0.0",
   "description": "This is just a simple folder structure template to use for my `React` projects.",
-  "main": "index.js",
+  "main": "src/server/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "start": "node src/server/index.js",
+    "webpack": "webpack --config config/webpack.js",
+    "webpack-watch": "webpack --config config/webpack.js --watch --colors"
   },
   "repository": {
     "type": "git",
@@ -20,6 +23,17 @@
     "babel": "^6.5.2",
     "babel-core": "^6.10.4",
     "babel-loader": "^6.2.4",
+    "jest-cli": "^13.2.3",
     "webpack": "^1.13.1"
+  },
+  "jest": {
+    "scriptPreprocessor": "./tools/preprocessor.js",
+    "unmockedModulePathPatterns": [
+      "react"
+    ],
+    "testPathDirs": [
+      "./src/app",
+      "./src/client"
+    ]
   }
 }
