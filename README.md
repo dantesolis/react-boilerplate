@@ -1,4 +1,4 @@
-#### React Basic Project Setyp
+#### React Basic Project Setup
 
 This is just a simple folder structure template to use for my `React` projects.
 
@@ -13,3 +13,5 @@ This is just a simple folder structure template to use for my `React` projects.
 ##### License
 
 - Check LICENSE.md
+
+&copy; 2016 D/S
