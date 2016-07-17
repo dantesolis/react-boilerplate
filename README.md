@@ -1,21 +1,21 @@
-#### React Basic Project Setup
+## React Basic Project Setup
 
 This is just a simple folder structure template to use for my `React` projects.
 
 
-##### What's inside
+#### What's inside
 
 Check the `devDependencies` inside `package.json`, but basically
 
 - webpack
 - babel
 - babel-loader
--
+- node-static (run it with `static .`)
 -
 
 Get them with `npm install --save-dev packageName`
 
-##### License
+### License
 
 - Check LICENSE.md
 
