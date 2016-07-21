@@ -7,21 +7,20 @@ var config = {
   ],
   output: {
     path: path.join(__dirname, 'www'),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
   },
-
   module: {
     loaders: [
       {
         test: /src\/.+.js$/,
         exclude: /node_modules/,
-        loaders: ['babel']
+        loaders: ['babel'],
       }
     ],
   },
   resolveLoader: {
     root: [
-      path.join(__dirname, 'node_modules')
+      path.join(__dirname, 'node_modules'),
     ],
   },
   resolve: {
