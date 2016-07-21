@@ -3,13 +3,10 @@
   "version": "1.0.0",
   "description": "This is just a simple folder structure template to use for my `React` projects.",
   "keywords": [],
-  "main": "src/server/index.js",
   "scripts": {
-    "test": "jest",
-    "start": "node src/server/index.js",
-    "webpack": "webpack --config config/webpack.js",
-    "webpack-watch": "webpack --config config/webpack.js --watch --colors",
-    "compile": "webpack"
+    "compile": "webpack",
+    "start": "node server.js",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
