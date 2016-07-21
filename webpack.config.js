@@ -1,10 +1,12 @@
 var path = require('path');
 
 module.exports = {
-  // context: path.join(__dirname, '../src/client/scripts/client.js'),
-  entry: path.resolve(__dirname, '../src/client/scripts/client.js'),
+  context: path.join(__dirname, 'src'),
+  entry: [
+    './main.js'
+  ],
   output: {
-    path: path.resolve(__dirname, '../dist'),
+    path: path.join(__dirname, 'www'),
     filename: 'bundle.js'
   },
 
@@ -19,12 +21,12 @@ module.exports = {
   },
   resolveLoader: {
     root: [
-      path.resolve(__dirname, '../node_modules')
+      path.join(__dirname, 'node_modules')
     ]
   },
   resolve: {
     root: [
-    path.resolve(__dirname, '../node_modules')
+      path.join(__dirname, 'node_modules')
     ]
   }
 };

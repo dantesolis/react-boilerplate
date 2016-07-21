@@ -2,6 +2,7 @@
 ---
 This is just a simple folder structure template to use for my `React` projects.
 
+
 ### Related blog post
 ---
 Coming soon!
@@ -20,6 +21,10 @@ Check the `devDependencies` inside `package.json`, but basically
 - jest-cli * (requires a bit more of a setup)
 
 Get them with `npm install --save-dev packageName`
+
+### Usage
+---
+Start the development server with this command `npm start`
 
 ### Setup
 ---
