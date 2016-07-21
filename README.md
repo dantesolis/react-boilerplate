@@ -11,7 +11,8 @@ Check the `devDependencies` inside `package.json`, but basically
 
 - react
 - webpack
-- babel
+- babel-core
+- babel-preset-react
 - babel-loader
 - node-static (run it with `static .` and it serves it at `http://127.0.0.1:8080`)
 - jest-cli * (requires a bit more of a setup)
