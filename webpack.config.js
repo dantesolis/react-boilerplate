@@ -15,8 +15,8 @@ var config = {
       {
         test: /src\/.+.js$/,
         exclude: /node_modules/,
-        loader: ['babel'],
-      },
+        loaders: ['babel']
+      }
     ],
   },
   resolveLoader: {
