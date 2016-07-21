@@ -1,12 +1,14 @@
 ## React Basic Project Setup
-
+---
 This is just a simple folder structure template to use for my `React` projects.
 
 ### Related blog post
+---
 Coming soon!
 
-### What's inside (technologies)
 
+### What's inside (technologies)
+---
 Check the `devDependencies` inside `package.json`, but basically
 
 - react
@@ -19,7 +21,13 @@ Check the `devDependencies` inside `package.json`, but basically
 
 Get them with `npm install --save-dev packageName`
 
-### License
+### Setup
+---
 
+`npm install`
+
+
+### License
+---
 - Check LICENSE.md
 - &copy; 2016 D/S

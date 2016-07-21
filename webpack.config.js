@@ -1,6 +1,7 @@
 var path = require('path');
 
-module.exports = {  
+module.exports = {
+  // context: path.join(__dirname, '../src/client/scripts/client.js'),
   entry: path.resolve(__dirname, '../src/client/scripts/client.js'),
   output: {
     path: path.resolve(__dirname, '../dist'),
@@ -12,8 +13,18 @@ module.exports = {
       {
         test: /src\/.+.js$/,
         exclude: /node_modules/,
-        loader: 'babel'
+        loader: ['babel'],
       }
+    ]
+  },
+  resolveLoader: {
+    root: [
+      path.resolve(__dirname, '../node_modules')
+    ]
+  },
+  resolve: {
+    root: [
+    path.resolve(__dirname, '../node_modules')
     ]
   }
 };
