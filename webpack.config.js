@@ -1,12 +1,15 @@
-var path = require('path');
+var webpack = reauire("webpack");
+    path = require('path');
+    OUTPUT = path.join(__dirname, 'www');
+    CONTEXT = path.join(__dirname, 'src');
 
 var config = {
-  context: path.join(__dirname, 'src'),
+  context: CONTEXT,
   entry: [
     './main.js',
   ],
   output: {
-    path: path.join(__dirname, 'www'),
+    path: OUTPUT,
     filename: 'bundle.js',
   },
   module: {

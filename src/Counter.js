@@ -5,6 +5,9 @@ export default class Counter extends React.Component {
 		super(props);
 		this.state = {
 			count: 0,
+			// same as saying <tt> this.state {count: props.initialCount}</tt>
+			// and adding a <tt><Counter.defaultProps{ initialCount: 0} /tt>
+			// at the end
 		}
 	}
 
@@ -13,6 +16,8 @@ export default class Counter extends React.Component {
 		return (
 			<button
 				onClick={() => {
+					// the arrow fnct binds `this` to its lexical scope calling
+					// setState forces a reload of my component 
 					this.setState({ count: this.state.count + 1 });
 				}}
 			>
