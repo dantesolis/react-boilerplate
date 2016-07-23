@@ -10,9 +10,11 @@ Coming soon!
 
 ### What's inside (technologies)
 ---
-Check the `devDependencies` inside `package.json`, but basically
+Check the `devDependencies` & `dependencies` inside `package.json`, but basically
 
 - react
+- react-dom
+- react-router
 - webpack
 - babel-core
 - babel-preset-react
@@ -20,7 +22,7 @@ Check the `devDependencies` inside `package.json`, but basically
 - node-static (run it with `static .` and it serves it at `http://127.0.0.1:8080`)
 - jest-cli * (requires a bit more of a setup)
 
-Get them with `npm install --save-dev packageName`
+Get them with `npm install --save-dev packageName` or `npm install --save packageName`
 
 ### Usage
 ---
@@ -30,6 +32,15 @@ Start the development server with this command `npm start`
 ---
 
 `npm install`
+
+### Todo
+---
+- ~Add a router~
+- Write a detailed Readme explaining what's inside.
+- Write a blogpost
+- Change from `hashHistory` to `browserHistory`
+- Add one stylesheet
+- Add [isomorphic-style-loader](https://github.com/kriasoft/isomorphic-style-loader).
 
 
 ### License

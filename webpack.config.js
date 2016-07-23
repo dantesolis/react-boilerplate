@@ -1,23 +1,24 @@
-var webpack = reauire("webpack");
+var webpack = require("webpack");
     path = require('path');
-    OUTPUT = path.join(__dirname, 'www');
-    CONTEXT = path.join(__dirname, 'src');
 
 var config = {
-  context: CONTEXT,
+  context: path.join(__dirname, 'app'),
   entry: [
     './main.js',
   ],
   output: {
-    path: OUTPUT,
+    path: path.join(__dirname, 'www'),
     filename: 'bundle.js',
+  },
+  resolve: {
+    extensions: ['', '.js', '.jsx']
   },
   module: {
     loaders: [
       {
-        test: /src\/.+.js$/,
+        test: /\.js$/,
         exclude: /node_modules/,
-        loaders: ['babel'],
+        loaders: ['babel', 'babel-loader?presets[]=react,presets[]=es2015'],
       }
     ],
   },
