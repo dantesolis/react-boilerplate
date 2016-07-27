@@ -1,4 +1,7 @@
 import React	from 'react';
+import iPhone from './iphone';
+// import Letter from ''
+
 
 export default class Counter extends React.Component {
 	constructor(props) {
@@ -12,13 +15,16 @@ export default class Counter extends React.Component {
 	}
 
 	render() {
-		
+
+		let updatedCount = this.state.count + 1
+
 		return (
 			<button
 				onClick={() => {
 					// the arrow fnct binds `this` to its lexical scope calling
 					// setState forces a reload of my component 
 					this.setState({ count: this.state.count + 1 });
+					console.log('I just got clicked'+this.state.count + 1);
 				}}
 			>
 				Count: {this.state.count}

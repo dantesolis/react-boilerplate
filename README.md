@@ -6,6 +6,7 @@ This is just a simple folder structure template to use for my `React` projects.
 ### Related blog post
 ---
 Coming soon!
+	- Future Content : React router, states, props
 
 
 ### What's inside (technologies)
