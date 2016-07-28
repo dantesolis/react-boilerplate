@@ -6,18 +6,20 @@ export default class Letter extends React.Component {
 
 		let letterStyle = {
 			backgroundColor: this.props.bgColor,
-		  width: "50",
-		  height: "50",
-		  fontSize: "36",
+			padding: 10,
+			margin: 10,
+		  width: 40,
+		  height: 40,
+		  fontSize: "32",
 		  textAlign: "center",
 		  fontFamily: "Roboto",
 		  color: "white",
-		  marginTop: "20"
+		  display: "inline-block"
 		}
 
 		return (
-			<div className="main">
-				<div style={letterStyle}>{this.props.children}</div>
+			<div style={letterStyle}>
+				{this.props.children}
 			</div>
 		);
 	}

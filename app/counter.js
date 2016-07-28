@@ -1,7 +1,4 @@
 import React	from 'react';
-import iPhone from './iphone';
-// import Letter from ''
-
 
 export default class Counter extends React.Component {
 	constructor(props) {
