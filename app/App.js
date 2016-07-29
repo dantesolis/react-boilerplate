@@ -1,8 +1,8 @@
 import React from 'react';
 import { Router, Route, Link, IndexRoute, hashHistory, browserHistory } from 'react-router';
 import Counter from './counter';
-import Letter from './letter';
-import iPhone from './iphone';
+import Letter from './letter.jsx';
+import IPhone from './iphone.jsx';
 
 
 export default class App extends React.Component {
@@ -16,7 +16,7 @@ export default class App extends React.Component {
 
 	render() {
 		return (
-			<div>
+			<div><IPhone />
 				<div>
 					<Counter />
 				</div>
@@ -28,7 +28,7 @@ export default class App extends React.Component {
 					<Letter bgColor= "hsla(300,100%,50%,1)">O</Letter>
 				</div>
 				<div>
-					<iPhone />
+					
 				</div>
 			</div>
 		);

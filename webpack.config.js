@@ -16,10 +16,12 @@ var config = {
   module: {
     loaders: [
       {
-        test: /\.js$/,
+        test: /\.js(x{0,1})$/,
         exclude: /node_modules/,
         loaders: ['babel', 'babel-loader?presets[]=react,presets[]=es2015'],
-      }
+      },
+     { test: /\.jpe?g$|\.gif$|\.png$|\.svg$|\.woff$|\.ttf$|\.wav$|\.mp3$/, loader: "file" }
+        
     ],
   },
   resolveLoader: {
