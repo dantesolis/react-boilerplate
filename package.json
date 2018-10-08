@@ -6,7 +6,7 @@
   "scripts": {
     "compile": "webpack",
     "start": "node server.js",
-    "test": "jest"
+    "test": "echo 'Nothing to test at this moment' "
   },
   "repository": {
     "type": "git",
@@ -34,8 +34,7 @@
       "react"
     ],
     "testPathDirs": [
-      "./src/",
-      ""
+      "./src/**/**/*.test.js"
     ]
   },
   "dependencies": {
